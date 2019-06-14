@@ -1,12 +1,12 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
+carpentry: "swc"      # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "Setpember 2019 SWC workshop @TU/Eindhoven"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Eindhoven University of Technology, Campus building..."      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "Setpember 2019 SWC workshop @TU/Eindhoven" # brief name of host site without address (e.g., "Euphoric State University")
+address: "Eindhoven University of Technology, Room:4.24, Building Gemini-South (15), Groene Loper 5, 5612 AE Eindhoven" # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng: "52.0015, 4.37113"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+latlng: "51.447497, 5.489574"   # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
 humandate: "September 25-26, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-09-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -14,8 +14,8 @@ enddate: 2019-09-26        # machine-readable end date for the workshop in YYYY-
 instructor: ["Renato Alvez", "Nicolas Dintzner"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["To be announced!"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["p.m.martinezlavanchy@tudelft.nl", "n.j.r.dintzner@tudelft.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  https://pad.carpentries.org/<to be announced>          # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite:   <to be announced>        # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+collaborative_notes:  Etherpad will be available. Link soon!   # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+eventbrite:   tue-software-carpentry-workshop-tickets-63069694153  # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -28,8 +28,6 @@ If the value is not 'true', 'false', 'null', or a number, please use
 double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
-
-
 
 {% comment %}
 For a workshop please delete the following block
@@ -53,6 +51,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
 <iframe
+  src="https://www.eventbrite.com/e/"
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
@@ -60,7 +59,6 @@ displayed if the 'eventbrite' field in the header is not set.
   scrolling="auto">
 </iframe>
 {% endif %}
-
 
 <h2 id="general">General Information</h2>
 
